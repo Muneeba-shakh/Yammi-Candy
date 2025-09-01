@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delight's | Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="logo2.jpg" type="icon">
+    <link rel="shortcut icon" href="logo2.jpg" type="icon">
+    <!-- Apple Touch Icon (for iOS devices) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="logo2.jpg">
+    <!-- Android/Chrome -->
+    <link rel="icon" type="icon" sizes="192x192" href="logo2.jpg">
+    <link rel="icon" type="icon" sizes="512x512" href="logo2.jpg">
+    <!-- Standard Favicon for other browsers -->
+    <link rel="icon" type="icon" sizes="32x32" href="logo2.jpg">
+    <link rel="icon" type="icon" sizes="16x16" href="logo2.jpg">
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="logo2.jpg">
+    <!-- Bootstrap CSS CDN with integrity hash -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Font Awesome CDN with integrity hash -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Animate.css CDN with integrity hash -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon from CDN -->
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/SufianKhan-Code/AiThioria@main/logo.png" type="image/png">
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/SufianKhan-Code/AiThioria@main/logo.png"
+        type="image/png">
+    <!-- Apple Touch Icon (for iOS devices) -->
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://cdn.jsdelivr.net/gh/SufianKhan-Code/AiThioria@main/logo.png">
+    <!-- Android/Chrome -->
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="https://cdn.jsdelivr.net/gh/SufianKhan-Code/AiThioria@main/logo.png">
+    <link rel="icon" type="image/png" sizes="512x512"
+        href="https://cdn.jsdelivr.net/gh/SufianKhan-Code/AiThioria@main/logo.png">
+    <!-- Standard Favicon for other browsers -->
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://cdn.jsdelivr.net/gh/SufianKhan-Code/AiThioria@main/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://cdn.jsdelivr.net/gh/SufianKhan-Code/AiThioria@main/logo.png">
+    <!-- Consolidated CDN Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+            background: #ffd7f3;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Pacifico', cursive;
+            font-weight: normal;
+        }
+
+        a {
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* === ENHANCED NAVBAR === */
+        header {
+            background: linear-gradient(135deg, pink 50%, purple 100%);
+            /* padding: 1.5rem 0; */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .logo1 {
+            width: 350px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            filter: drop-shadow(2px 2px 4px rgba(121, 24, 163, 0.1));
+        }
+
+        .logo1:hover {
+            transform: scale(1.05);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: white;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 0.8rem 1.5rem;
+            display: inline-block;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+        }
+
+        .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-links a.active {
+            background: white;
+            color: rgb(216, 151, 162);
+            font-weight: 700;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            z-index: 1001;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        .hamburger:hover {
+            transform: rotate(90deg);
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* === MENU HEADER === */
+        .menu-header {
+            text-align: center;
+            padding: 3rem 2rem 1rem;
+            background: linear-gradient(to right, rgba(255, 182, 193, 0.2), rgba(216, 151, 162, 0.2));
+        }
+
+        .menu-header h1 {
+            font-size: 3.5rem;
+            color: rgb(216, 151, 162);
+            margin-bottom: 1rem;
+        }
+
+        .menu-header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            color: #555;
+        }
+
+        /* === CATEGORY FILTER === */
+        .category-filter {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 1rem 2rem 2rem;
+            background: linear-gradient(to right, rgba(255, 182, 193, 0.2), rgba(216, 151, 162, 0.2));
+        }
+
+        .filter-btn {
+            padding: 0.8rem 1.5rem;
+            background: white;
+            color: rgb(216, 151, 162);
+            border: 2px solid rgb(216, 151, 162);
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: rgb(216, 151, 162);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* === MENU SECTION === */
+        .menu-section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .category-title {
+            font-size: 2.5rem;
+            color: rgb(216, 151, 162);
+            text-align: center;
+            margin: 2rem 0 3rem;
+            position: relative;
+        }
+
+        .category-title:after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 3px;
+            background: rgb(216, 151, 162);
+            margin: 0.5rem auto;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .menu-item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .menu-content {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .menu-item h3 {
+            font-size: 1.5rem;
+            color: rgb(216, 151, 162);
+            margin-bottom: 0.5rem;
+        }
+
+        .menu-description {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            min-height: 60px;
+        }
+
+        .menu-price {
+            font-weight: 700;
+            color: rgb(216, 151, 162);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        /* === VIEW PRODUCT BUTTON === */
+        .view-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(135deg, pink 0%, purple 100%);
+            color: white;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .view-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+            color: white;
+        }
+
+        /* === SPECIAL OFFERS === */
+        .special-offers {
+            padding: 4rem 2rem;
+            background: linear-gradient(to right, rgba(255, 182, 193, 0.1), rgba(216, 151, 162, 0.1));
+            text-align: center;
+        }
+
+        .offers-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .special-offers h2 {
+            font-size: 2.8rem;
+            color: rgb(216, 151, 162);
+            margin-bottom: 3rem;
+        }
+
+        .offer-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .offer-card h3 {
+            color: rgb(216, 151, 162);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .offer-card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+
+        /* === FOOTER === */
+        footer {
+            background: linear-gradient(135deg, pink 0%, purple 100%);
+            color: white;
+            text-align: center;
+            padding: 3rem 0 1.5rem;
+            font-weight: 600;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-5px);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #ffebee;
+        }
+
+        .copyright {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 1200px) {
+            .navbar {
+                width: 95%;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .menu-header h1 {
+                font-size: 3rem;
+            }
+
+            .category-title {
+                font-size: 2.2rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .nav-links a {
+                padding: 0.7rem 1.2rem;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 350px;
+                height: 100vh;
+                background: linear-gradient(135deg, pink 0%, purple 100%);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2.5rem;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+                transition: right 0.4s ease;
+                z-index: 1000;
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-links a {
+                font-size: 1.3rem;
+                padding: 1rem 2rem;
+                width: 80%;
+                text-align: center;
+                background: rgba(255, 255, 255, 0.3);
+            }
+
+            .menu-header {
+                padding: 2rem 1.5rem 1rem;
+            }
+
+            .menu-header h1 {
+                font-size: 2.5rem;
+            }
+
+            .menu-section {
+                padding: 2rem 1.5rem;
+            }
+
+            .category-title {
+                font-size: 2rem;
+            }
+
+            .category-filter {
+                padding: 1rem 1.5rem 2rem;
+            }
+
+            .special-offers {
+                padding: 3rem 1.5rem;
+            }
+
+            .special-offers h2 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo1 {
+                width: 180px;
+            }
+
+            .menu-header h1 {
+                font-size: 2.2rem;
+            }
+
+            .category-title {
+                font-size: 1.8rem;
+            }
+
+            .menu-item h3 {
+                font-size: 1.3rem;
+            }
+
+            .filter-btn {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.9rem;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- === ENHANCED NAVBAR === -->
+    <header>
+        <nav class="navbar">
+            <a href="Index.html"><img class="logo1" src="logo.jpg" alt="Delight's Bakery Logo"></a>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Cart.html">Cart</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- === MENU HEADER === -->
+    <section class="menu-header">
+        <h1>Our Delicious Menu</h1>
+        <p>Indulge in our handcrafted desserts made with the finest ingredients and lots of love. Each treat is
+            carefully created to bring sweetness and joy to your special moments.</p>
+    </section>
+
+    <!-- === CATEGORY FILTER === -->
+    <div class="category-filter">
+        <button class="filter-btn active" data-category="all">All Items</button>
+        <button class="filter-btn" data-category="cakes">Cakes</button>
+        <button class="filter-btn" data-category="cupcakes">Cupcakes</button>
+        <button class="filter-btn" data-category="cookies">Cookies</button>
+    </div>
+
+    <!-- === MENU SECTION === -->
+    <section class="menu-section">
+
+        <!-- Cakes Category -->
+        <h2 class="category-title">Cakes</h2>
+        <div class="menu-grid" data-category="cakes">
+            <div class="menu-item">
+                <img src="cp1.jpeg" alt="Strawberry Cake">
+                <div class="menu-content">
+                    <h3>Chocolate Truffle Cake</h3>
+                    <span class="menu-price">$6.50</span>
+                    <button class="view-btn"><a href="Cproduct1.html" style="color: white;">View Details</a></button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="cp2.jpeg" alt="Classic Cheesecake">
+                <div class="menu-content">
+                    <h3>Oreo Chocolate Drip Cake</h3>
+                    <span class="menu-price">$8.00</span>
+                    <button class="view-btn"><a href="Cproduct2.html" style="color: white;">View Details</a></button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="cp3.jpg" alt="Chocolate Cake">
+                <div class="menu-content">
+                    <h3>Ferrero Rocher Cake</h3>
+                    <span class="menu-price">$11.00</span>
+                    <button class="view-btn"><a href="Cproduct3.html" style="color: white;">View Details</a></button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="cp4.jpg" alt="Strawberry Cake">
+                <div class="menu-content">
+                    <h3>chocolate cake topped</h3>
+                    <span class="menu-price"> $10.50</span>
+                    <button class="view-btn"><a href="Cproduct4.html" style="color: white;">View Details</a></button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="cp5.jpg" alt="Classic Cheesecake">
+                <div class="menu-content">
+                    <h3>classic Chocolate Cake</h3>
+                    <span class="menu-price">$6.50</span>
+                    <button class="view-btn"><a href="Cproduct5.html" style="color: white;">View Details</a></button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="cp6.jpg" alt="Chocolate Cake">
+                <div class="menu-content">
+                    <h3>Black Forest Gateau</h3>
+                    <span class="menu-price">$9.50</span>
+                    <button class="view-btn"><a href="Cproduct6.html" style="color: white;">View Details</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cupcakes Category -->
+        <h2 class="category-title">Cupcakes</h2>
+        <div class="menu-grid" data-category="cupcakes">
+            <div class="menu-item">
+                <img src="cu1.jpg" alt="Strawberry Cake">
+                <div class="menu-content">
+                    <h3>Chocolate Cupcake</h3>
+                    <span class="menu-price">$2.00</span>
+                    <button class="view-btn"><a href="Cuproduct1.html" style="color: white;">View Details</a></button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="cu2.jpg" alt="Classic Cheesecake">
+                <div class="menu-content">
+                    <h3>Vanilla Cupcake</h3>
+                    <span class="menu-price">$3.00</span>
+                    <button class="view-btn"><a href="Cuproduct2.html" style="color: white;">View Details</a></button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="cu3.jpg" alt="Chocolate Cake">
+                <div class="menu-content">
+                    <h3>Red Velvet Cupcakes</h3>
+                    <span class="menu-price">$1.30</span>
+                    <button class="view-btn"><a href="Cuproduct3.html" style="color: white;">View Details</a></button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="cu4.jpg" alt="Strawberry Cake">
+                <div class="menu-content">
+                    <h3>Vanilla & Blueberry Cupcake</h3>
+                    <span class="menu-price"> $2.50</span>
+                    <button class="view-btn"><a href="Cuproduct4.html" style="color: white;">View Details</a></button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="cu5.jpg" alt="Classic Cheesecake">
+                <div class="menu-content">
+                    <h3>S'mores Cupcake</h3>
+                    <span class="menu-price">$1.80</span>
+                    <button class="view-btn"><a href="Cuproduct5.html" style="color: white;">View Details</a></button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="cu6.jpg" alt="Chocolate Cake">
+                <div class="menu-content">
+                    <h3>Caramel Cupcakes</h3>
+                    <span class="menu-price">$3.10</span>
+                    <button class="view-btn"><a href="Cuproduct6.html" style="color: white;">View Details</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cookies Category -->
+        <h2 class="category-title">Cookies</h2>
+        <div class="menu-grid" data-category="cookies">
+            <div class="menu-item">
+                <img src="co1.jpg" alt="Strawberry Cake">
+                <div class="menu-content">
+                    <h3>Fudgy Chocolate Cookies</h3>
+                    <span class="menu-price">$1.30</span>
+                    <button class="view-btn"><a href="Coproduct1.html" style="color: white;">View Details</a></button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="co2.jpg" alt="Classic Cheesecake">
+                <div class="menu-content">
+                    <h3>Chocolate Chip Cookie</h3>
+                    <span class="menu-price">$2.00</span>
+                    <button class="view-btn"><a href="Coproduct2.html" style="color: white;">View Details</a></button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="co3.jpg" alt="Chocolate Cake">
+                <div class="menu-content">
+                    <h3>Cookies and Cream Cookies</h3>
+                    <span class="menu-price">$1.50</span>
+                    <button class="view-btn"><a href="Coproduct3.html" style="color: white;">View Details</a></button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="co4.jpg" alt="Strawberry Cake">
+                <div class="menu-content">
+                    <h3>Oreo Cookies</h3>
+                    <span class="menu-price"> $2.50</span>
+                    <button class="view-btn"><a href="Coproduct4.html" style="color: white;">View Details</a></button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="co5.jpg" alt="Classic Cheesecake">
+                <div class="menu-content">
+                    <h3>Monster Cookies</h3>
+                    <span class="menu-price">$3.80</span>
+                    <button class="view-btn"><a href="Coproduct5.html" style="color: white;">View Details</a></button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="co6.png" alt="Chocolate Cake">
+                <div class="menu-content">
+                    <h3>Christmas Sugar Cookies</h3>
+                    <span class="menu-price">$1.60</span>
+                    <button class="view-btn"><a href="Coproduct6.html" style="color: white;">View Details</a></button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- === FOOTER === -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="Home.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Menu.html">Menu</a>
+                <a href="Contact.html">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Delight's. Crafted with ♥ by Muneeba & Manahil.</p>
+                <p>123 Sweet Street, Candy Town, CT 12345 | Phone: (555) 123-YAMMI</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- === JS === -->
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+
+            // Change hamburger icon to X when menu is open
+            const hamburger = document.querySelector('.hamburger');
+            if (navLinks.classList.contains('active')) {
+                hamburger.innerHTML = '✕';
+                hamburger.style.fontSize = '2.2rem';
+            } else {
+                hamburger.innerHTML = '☰';
+                hamburger.style.fontSize = '2rem';
+            }
+        }
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+                document.querySelector('.hamburger').innerHTML = '☰';
+                document.querySelector('.hamburger').style.fontSize = '2rem';
+
+                // Set active class to clicked link
+                document.querySelectorAll('.nav-links a').forEach(item => {
+                    item.classList.remove('active');
+                });
+                link.classList.add('active');
+            });
+        });
+
+        // Category filter functionality
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                // Remove active class from all buttons
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+
+                // Add active class to clicked button
+                this.classList.add('active');
+
+                const category = this.getAttribute('data-category');
+
+                if (category === 'all') {
+                    // Show all menu items
+                    document.querySelectorAll('.menu-grid').forEach(grid => {
+                        grid.style.display = 'grid';
+                    });
+                    document.querySelectorAll('.category-title').forEach(title => {
+                        title.style.display = 'block';
+                    });
+                } else {
+                    // Hide all menu items
+                    document.querySelectorAll('.menu-grid').forEach(grid => {
+                        grid.style.display = 'none';
+                    });
+                    document.querySelectorAll('.category-title').forEach(title => {
+                        title.style.display = 'none';
+                    });
+
+                    // Show only selected category
+                    document.querySelector(`.menu-grid[data-category="${category}"]`).style.display = 'grid';
+                    document.querySelectorAll('.category-title').forEach(title => {
+                        if (title.textContent.toLowerCase().includes(category)) {
+                            title.style.display = 'block';
+                        }
+                    });
+                }
+            });
+        });
+
+        // Add click event to all view buttons
+        // document.querySelectorAll('.view-btn').forEach(button => {
+        //     button.addEventListener('click', function() {
+        //         const productName = this.parentElement.querySelector('h3').textContent;
+        //         alert(`You selected: ${productName}`);
+        //         // In a real implementation, you would redirect to a product page
+        //         // window.location.href = `product.html?name=${encodeURIComponent(productName)}`;
+        //     });
+        // });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
